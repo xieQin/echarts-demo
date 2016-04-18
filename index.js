@@ -112,18 +112,36 @@ var option = {
     baseOption: {
         title: {
             text: '上证指数',
-            left: 'center'
+            left: 'center',
+            textStyle: {
+                color: '#fff'
+            },
+            borderColor: '#fff'
+        },
+        legend: {
+            boderColor: '#fff'
         },
         tooltip: {
             trigger: 'axis',
             axisPointer: {
-                type: 'line'
+                type: 'cross',
+                crossStyle: {
+                    color: '#fff',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
             }
         },
         grid: {
-            left: '10%',
-            right: '10%',
-            bottom: '15%'
+            show: true,
+            left: '2%',
+            right: '2%',
+            bottom: '30px',
+            borderColor: '#000',
+            borderWidth: 1,
+            containLabel: true,
+            backgroundColor: '#000'
         },
         xAxis: {
             type: 'category',
@@ -134,24 +152,27 @@ var option = {
             splitLine: {show: false},
             splitNumber: 20,
             min: 'dataMin',
-            max: 'dataMax'
+            max: 'dataMax',
+            axisLabel: {
+                textStyle: {
+                    color: '#fff'
+                }
+            }
         },
         yAxis: {
             scale: true,
             splitArea: {
                 show: true
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#fff'
+                }
             }
         },
         dataZoom: [
             {
                 type: 'inside',
-                start: 50,
-                end: 100
-            },
-            {
-                show: true,
-                type: 'slider',
-                y: '90%',
                 start: 50,
                 end: 100
             }
@@ -160,7 +181,15 @@ var option = {
             {
                 name: '上证指数',
                 type: 'candlestick',
-                data: data0.values
+                data: data0.values,
+                itemStyle: {
+                    normal: {
+                        color: '#f00',
+                        color0: '#00d100',
+                        borderColor: '#f00',
+                        borderColor0: '#00d100'
+                    }
+                }
             }
         ]
     },
