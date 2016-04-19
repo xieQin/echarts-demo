@@ -230,7 +230,8 @@ var option = {
                 ]
             }
         }
-    ]
+    ],
+    animationDurationUpdate: 500
 };
 
 function formatDate(data) {
