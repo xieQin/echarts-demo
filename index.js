@@ -147,9 +147,9 @@ var option = {
             axisPointer: {
                 type: 'cross',
                 crossStyle: {
-                    color: '#fff',
+                    color: '#000',
                     textStyle: {
-                        color: '#fff'
+                        color: '#000'
                     }
                 }
             }
@@ -159,10 +159,10 @@ var option = {
             left: '2%',
             right: '2%',
             bottom: '30px',
-            borderColor: '#000',
+            borderColor: '#fff',
             borderWidth: 1,
             containLabel: true,
-            backgroundColor: '#000'
+            backgroundColor: '#fff'
         },
         xAxis: {
             type: 'category',
@@ -176,7 +176,7 @@ var option = {
             max: 'dataMax',
             axisLabel: {
                 textStyle: {
-                    color: '#fff'
+                    color: '#000'
                 }
             }
         },
@@ -187,7 +187,7 @@ var option = {
             },
             axisLabel: {
                 textStyle: {
-                    color: '#fff'
+                    color: '#000'
                 }
             }
         },

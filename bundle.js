@@ -88,9 +88,9 @@
 	            axisPointer: {
 	                type: 'cross',
 	                crossStyle: {
-	                    color: '#fff',
+	                    color: '#000',
 	                    textStyle: {
-	                        color: '#fff'
+	                        color: '#000'
 	                    }
 	                }
 	            }
@@ -100,10 +100,10 @@
 	            left: '2%',
 	            right: '2%',
 	            bottom: '30px',
-	            borderColor: '#000',
+	            borderColor: '#fff',
 	            borderWidth: 1,
 	            containLabel: true,
-	            backgroundColor: '#000'
+	            backgroundColor: '#fff'
 	        },
 	        xAxis: {
 	            type: 'category',
@@ -117,7 +117,7 @@
 	            max: 'dataMax',
 	            axisLabel: {
 	                textStyle: {
-	                    color: '#fff'
+	                    color: '#000'
 	                }
 	            }
 	        },
@@ -128,7 +128,7 @@
 	            },
 	            axisLabel: {
 	                textStyle: {
-	                    color: '#fff'
+	                    color: '#000'
 	                }
 	            }
 	        },
@@ -163,7 +163,8 @@
 	                top: 'middle'
 	            }]
 	        }
-	    }]
+	    }],
+	    animationDurationUpdate: 500
 	};
 
 	function formatDate(data) {
@@ -51173,7 +51174,7 @@
 
 
 	// module
-	exports.push([module.id, "html, body {\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: #000;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n.k-lines {\r\n  width: 100%;\r\n  height: 300px;\r\n}", ""]);
+	exports.push([module.id, "html, body {\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: #fff;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n.k-lines {\r\n  width: 100%;\r\n  height: 300px;\r\n}", ""]);
 
 	// exports
 
